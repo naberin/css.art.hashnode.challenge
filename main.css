@@ -39,6 +39,7 @@ HashNode glasses
  */
 .glasses-ctr {
     margin-bottom: 380px;
+    filter: drop-shadow(0px 8px 4px rgba(32, 35, 37, 0.2));
     z-index: 999;
 }
 
