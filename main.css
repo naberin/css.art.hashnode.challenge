@@ -11,7 +11,6 @@ html, body {
 main {
     width: 100%;
     height: 100%;
-    padding: 25px;
 }
 
 .flex {
@@ -29,18 +28,37 @@ main {
 .justify-end {
     justify-content: end;
 }
-
-.art-canvas {
-
+.centered {
+    margin: 0 auto;
 }
+
+.overflow-scroll {
+    overflow: scroll;
+}
+.box-sizing-content {
+    box-sizing: content-box;
+}
+
+.creator-canvas {
+    width: 800px;
+    height: 100%;
+}
+
+.creator {
+    height: 500px;
+}
+
 
 /**
 HashNode glasses
  */
 .glasses-ctr {
-    margin-bottom: 380px;
+    position: absolute;
+    top: 120px;
     filter: drop-shadow(0px 8px 4px rgba(32, 35, 37, 0.2));
-    z-index: 999;
+    z-index: 900;
+    flex-direction: row;
+    display: flex;
 }
 
 .glasses-ctr  .hashnode-glasses {
@@ -64,13 +82,11 @@ HashNode glasses
 Creator MS
  */
 .creator-head {
-    position: absolute;
-    top: 190px;
     background: linear-gradient(to bottom, #e0af9a, #efddc4);
     clip-path: polygon(18% 12%, 80% 12%, 100% 40%, 89% 80%, 65% 90%, 58% 94%, 42% 94%, 35% 90%, 11% 80%, 0% 40%);
     height: 510px;
     width: 359px;
-
+    box-shadow: inset 1em 1em 9em rgba(0, 0, 0, .5);
 }
 
 .creator-head .nose {
