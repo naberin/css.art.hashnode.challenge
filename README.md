@@ -1,2 +1,6 @@
-# css.art.hashnode.challenge
-#HashnodeChallenge CSS art for the 2022 Hashnode Challenge
+# CSS Art #HashnodeChallenge
+An entry for the 2022 CSS art #HashnodeChallenge.
+
+### DREAM.
+### BUILD.
+### SHARE.
