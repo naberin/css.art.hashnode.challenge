@@ -1,18 +1,14 @@
 html, body {
-    background: linear-gradient(to bottom right, #0d2f3b, #31414d);
+    background: linear-gradient(to bottom right, #0d2f3b, #3d5767);
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
 }
-
-* { box-sizing: border-box; }
-
 main {
     width: 100%;
     height: 100%;
 }
-
 .flex {
     display: flex;
 }
@@ -31,7 +27,6 @@ main {
 .centered {
     margin: 0 auto;
 }
-
 .overflow-scroll {
     overflow: scroll;
 }
@@ -39,69 +34,100 @@ main {
     box-sizing: content-box;
 }
 
-.creator-canvas {
-    width: 800px;
+/************
+creator
+*************/
+main .creator {
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+}
+
+main .creator .headshot {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+main .creator .head {
+    height: 100%;
+    width: 100%;
+}
+
+.hair-container {
+    position: absolute;
+    width: 100%;
     height: 100%;
 }
 
-.creator {
-    height: 500px;
+.hair-container .base {
+    background: linear-gradient(to bottom, #b47929, #cb6021);
+    height: 100%;
+    clip-path: polygon(
+            34% 5%, 50% 2%, 65% 4%, 72% 10%,
+            75% 30%, 80% 48%, 85% 52%, 90% 70%,
+            95% 80%, 10% 80%,
+            18% 52%, 24% 50%, 27% 45%, 27% 30%,
+            22% 28%, 20% 20%, 25% 12%, 28% 12%);
 }
 
 
-/**
-HashNode glasses
- */
-.glasses-ctr {
+
+
+.face-container {
+    z-index: 100;
+    width: 100%;
+}
+
+main .creator .face {
     position: absolute;
-    top: 120px;
-    filter: drop-shadow(0px 8px 4px rgba(32, 35, 37, 0.2));
-    z-index: 900;
-    flex-direction: row;
-    display: flex;
+    width: 280px;
+    height: 420px;
+    margin: 0 auto;
+    clip-path: polygon(20% 12%, 80% 12%, 87% 18%, 95% 40%, 89% 80%, 65% 90%, 58% 94%, 42% 94%, 35% 90%, 11% 80%, 5% 45%, 12% 18%);
+    background: linear-gradient(to bottom, #e0af9a, #efddc4);
+    box-shadow: inset 0 30px 12em rgba(255, 156, 95, 0.89);
 }
 
-.glasses-ctr  .hashnode-glasses {
+main .creator .glasses-container {
+    position: relative;
+    filter: drop-shadow(0px 8px 4px rgba(32, 35, 37, 0.2));
+    top: 120px;
+    z-index: 900;
+}
+
+.hashnode {
+    margin: 0 auto;
     border-radius: 35px;
     background-color: #2962fb;
     transform: rotate(45deg);
-    height: 180px;
-    width: 180px;
-    padding-top: 52px;
-    padding-left: 52px;
+    height: 95px;
+    width: 95px;
+    padding-top: 48px;
+    padding-left: 51px;
 }
-
-.glasses-ctr .hashnode-glasses .white-circle {
-    height: 78px;
-    width: 78px;
+.hashnode div {
+    content: "";
+    height: 50px;
+    width: 50px;
     background-color: #fff;
     border-radius: 50%;
 }
 
-/**
-Creator MS
- */
-.creator-head {
-    background: linear-gradient(to bottom, #e0af9a, #efddc4);
-    clip-path: polygon(18% 12%, 80% 12%, 100% 40%, 89% 80%, 65% 90%, 58% 94%, 42% 94%, 35% 90%, 11% 80%, 0% 40%);
-    height: 510px;
-    width: 359px;
-    box-shadow: inset 1em 1em 9em rgba(0, 0, 0, .5);
-}
-
-.creator-head .nose {
+.nose-container {
     position: relative;
-    top: 242px;
-
-    height: 280px;
-    width: 100px;
-    clip-path: polygon(25% 0%, 75% 0%, 70% 24%, 89% 22%, 100% 30%, 95% 36%, 60% 42%, 40% 42%, 5% 36%, 0% 30%, 14% 22%, 32% 25%);
-    background: linear-gradient(to bottom, #f6a49e, #e7c69c);
+    top: 240px;
+    z-index: 899;
+    width: 100%;
+    height: 100px;
 }
 
-.nose-wrapper {
+.nose {
     margin: 0 auto;
-    filter: drop-shadow(0px 25px 30px rgba(252, 239, 225, 0.7));
-    height: max-content;
-    width: max-content;
+    height: 48px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #efddc4, rgba(241, 164, 131, 0.54));
+    box-shadow: 0 10px 40px rgb(255, 241, 226);
+    border-bottom: 4px solid rgba(29, 29, 29, .4);
 }
