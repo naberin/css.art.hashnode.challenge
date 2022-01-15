@@ -39,6 +39,7 @@ HashNode glasses
  */
 .glasses-ctr {
     margin-bottom: 380px;
+    z-index: 999;
 }
 
 .glasses-ctr  .hashnode-glasses {
@@ -47,13 +48,13 @@ HashNode glasses
     transform: rotate(45deg);
     height: 180px;
     width: 180px;
-    padding-top: 46px;
-    padding-left: 47px;
+    padding-top: 52px;
+    padding-left: 52px;
 }
 
 .glasses-ctr .hashnode-glasses .white-circle {
-    height: 86px;
-    width: 86px;
+    height: 78px;
+    width: 78px;
     background-color: #fff;
     border-radius: 50%;
 }
