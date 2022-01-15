@@ -1,0 +1,6 @@
+# environment
+# outputs
+# IDE byproducts
+.idea
+.DS_Store
+.vscode
