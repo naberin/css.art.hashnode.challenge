@@ -14,18 +14,34 @@ main {
     padding: 25px;
 }
 
-/**
-HashNode glasses
- */
 .flex {
     display: flex;
 }
 .flex.flex-row {
     flex-direction: row;
 }
+.flex.flex-col {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: end;
+}
 
+.art-canvas {
 
-.hashnode-glasses {
+}
+
+/**
+HashNode glasses
+ */
+.glasses-ctr {
+    margin-bottom: 380px;
+}
+
+.glasses-ctr  .hashnode-glasses {
     border-radius: 35px;
     background-color: #2962fb;
     transform: rotate(45deg);
@@ -35,9 +51,10 @@ HashNode glasses
     padding-left: 47px;
 }
 
-.hashnode-glasses .white-circle {
+.glasses-ctr .hashnode-glasses .white-circle {
     height: 86px;
     width: 86px;
     background-color: #fff;
     border-radius: 50%;
 }
+
