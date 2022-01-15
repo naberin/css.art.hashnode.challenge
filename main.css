@@ -64,9 +64,32 @@ Creator MS
  */
 .creator-head {
     position: absolute;
-    top: 175px;
-    background-color: #d0c0ab;
-    border-radius: 52% 52% 82% 84%;
+    top: 190px;
+    background: linear-gradient(to bottom, #e0af9a, #efddc4);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 50% 100%,  0% 82%);
     height: 510px;
     width: 359px;
+}
+
+.creator-head::after {
+    background-color: #ea9e94;
+    height: 100%;
+    width: 100%;
+}
+
+.creator-head .nose {
+    position: relative;
+    top: 245px;
+
+    height: 280px;
+    width: 100px;
+    clip-path: polygon(25% 0%, 75% 0%, 70% 24%, 89% 22%, 100% 30%, 95% 36%, 60% 42%, 40% 42%, 5% 36%, 0% 30%, 14% 22%, 32% 25%);
+    background: linear-gradient(to bottom, #eeaea7, #d0c0ab);
+}
+
+.nose-wrapper {
+    margin: 0 auto;
+    filter: drop-shadow(0px 25px 10px rgba(255, 206, 194, 0.7));
+    height: max-content;
+    width: max-content;
 }
