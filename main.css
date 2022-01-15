@@ -59,3 +59,14 @@ HashNode glasses
     border-radius: 50%;
 }
 
+/**
+Creator MS
+ */
+.creator-head {
+    position: absolute;
+    top: 175px;
+    background-color: #d0c0ab;
+    border-radius: 52% 52% 82% 84%;
+    height: 510px;
+    width: 359px;
+}
