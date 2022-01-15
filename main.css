@@ -54,6 +54,10 @@ main .creator .head {
     width: 100%;
 }
 
+/************
+creator - hair
+*************/
+
 .hair-container {
     position: absolute;
     width: 100%;
@@ -71,9 +75,43 @@ main .creator .head {
             22% 28%, 20% 20%, 25% 12%, 28% 12%);
 }
 
+.hair-container  .hair {
+    position: absolute;
+}
+
+.hair-container [class^="xl"] {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.hair-container [class^="xm"] {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.hair-container .hair.h01 {
+    top: 280px;
+    left: 100px;
+    background-color: #cb6021;
+}
+.hair-container .hair.h02 {
+    top: 42px;
+    left: 170px;
+    z-index: 800;
+    clip-path: polygon(0 0, 100% 0%, 80% 0%, 0% 100%);
+    background-color: #e58b19;
+}
+.hair-container .hair.h03 {
+    top: 130px;
+    left: 90px;
+    background-color: #f39216;
+}
 
 
-
+/************
+creator - face
+*************/
 .face-container {
     z-index: 100;
     width: 100%;
@@ -87,7 +125,12 @@ main .creator .face {
     clip-path: polygon(20% 12%, 80% 12%, 87% 18%, 95% 40%, 89% 80%, 65% 90%, 58% 94%, 42% 94%, 35% 90%, 11% 80%, 5% 45%, 12% 18%);
     background: linear-gradient(to bottom, #e0af9a, #efddc4);
     box-shadow: inset 0 30px 12em rgba(255, 156, 95, 0.89);
+
 }
+
+/*****************
+creator - glasses
+******************/
 
 main .creator .glasses-container {
     position: relative;
@@ -114,6 +157,10 @@ main .creator .glasses-container {
     border-radius: 50%;
 }
 
+
+/*************
+creator - nose
+**************/
 .nose-container {
     position: relative;
     top: 240px;
@@ -130,4 +177,46 @@ main .creator .glasses-container {
     background: linear-gradient(to bottom, #efddc4, rgba(241, 164, 131, 0.54));
     box-shadow: 0 10px 40px rgb(255, 241, 226);
     border-bottom: 4px solid rgba(29, 29, 29, .4);
+}
+
+/***************
+creator - smile
+***************/
+.mouth-container {
+    position: relative;
+    margin: 0 auto;
+    top: 145px;
+    z-index: 899;
+    width: 200px;
+    height: 100px;
+
+}
+
+.smile {
+    top: 15px;
+    position: relative;
+    clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
+
+    height: 100%;
+    width: 100%;
+}
+
+.smile .mouth {
+    height: 70%;
+    width: 60%;
+    border-radius: 50%;
+
+    box-shadow: 0 5px 10px rgba(255, 107, 59, 0.52);
+    background-color: #0d2f3b;
+}
+
+.teeth {
+    position: absolute;
+    margin: 0 auto;
+    top: 15px;
+    width: 60%;
+    height: 40%;
+    border-radius: 50%;
+    background: radial-gradient(#fff, #bbb);
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
 }
