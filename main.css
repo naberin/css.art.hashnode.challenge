@@ -458,7 +458,7 @@ creator - background
     height: 300px;
     top: -300px;
     background: linear-gradient(to bottom, #efddc4, rgba(109, 185, 172, 0.2));
-    clip-path: polygon(0 100%, 10% 84%, 20% 72%, 30% 50%, 50% 0, 70% 50%, 100% 100%);
+    clip-path: polygon(0 100%, 10% 80%, 13% 80%, 35% 50%, 60% 0, 65% 20%, 70% 42%, 79% 49%, 84% 64%, 89% 73%, 92% 82%, 100% 100%);
 }
 
 .bg .building.A {
