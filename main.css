@@ -5,6 +5,8 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+
 main {
     width: 100%;
     height: 100%;
@@ -27,9 +29,6 @@ main {
 .centered {
     margin: 0 auto;
 }
-.overflow-scroll {
-    overflow: scroll;
-}
 .box-sizing-content {
     box-sizing: content-box;
 }
@@ -48,8 +47,9 @@ main .creator .headshot {
     position: relative;
     width: inherit;
     height: inherit;
-    margin-top: 190px;
+    overflow: hidden;
 }
+
 
 main .creator .head {
     height: 100%;
@@ -64,6 +64,7 @@ creator - hair
     position: absolute;
     width: 100%;
     height: 100%;
+
 }
 
 .hair-container .base {
@@ -241,12 +242,12 @@ creator - ears
 creator - face
 *************/
 .face-container {
-    z-index: 100;
     width: 100%;
 }
 
 main .creator .face {
     position: absolute;
+    z-index: 250;
     width: 280px;
     height: 420px;
     margin: 0 auto;
@@ -347,4 +348,88 @@ creator - smile
     border-radius: 50%;
     background: radial-gradient(#fff, #bbb);
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+}
+
+/***************
+creator - neck
+***************/
+.neck-container {
+    position: absolute;
+    z-index: 200;
+    height: 120px;
+    width: 100%;
+    top: 320px;
+}
+
+.neck {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 80px;
+    box-shadow: inset 0 70px 20px rgba(108, 68, 36, 0.2);
+    background-color: #e0af9a;
+}
+
+/***************
+creator - body
+***************/
+.body {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    top: 420px;
+}
+
+.body .front-hoodie {
+    position: absolute;
+    z-index: 300;
+}
+
+.body .front-hoodie.left {
+    position: relative;
+    top: -20px;
+    left: -50px;
+    margin: 0 auto;
+    height: 40px;
+    width: 110px;
+    z-index: 300;
+    border-radius: 50% 90% 0;
+    transform: rotate(8deg);
+    background: linear-gradient(to left, #494949, #292929);
+
+}
+.body .front-hoodie.right {
+    position: relative;
+    top: -60px;
+    left: 54px;
+    margin: 0 auto;
+    height: 40px;
+    z-index: 300;
+    width: 100px;
+    border-radius: 90% 50% 50% 0;
+    transform: rotate(-8deg);
+    background: linear-gradient(to right, #494949, #292929);
+}
+
+.body .back-hoodie {
+    background-color: #292929;
+    position: absolute;
+    z-index: 2;
+    border-radius: 90px 90px 0 0;
+    top: -84px;
+    left: 183px;
+    margin: 0 auto;
+    height: 80px;
+    width: 235px;
+}
+
+.body .clothes {
+    background: #292929;
+    position: relative;
+    z-index: 2;
+    border-radius: 70% 70% 0 0;
+    top: -140px;
+    margin: 0 auto;
+    height: 530px;
+    width: 425px;
 }
