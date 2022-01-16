@@ -1,5 +1,5 @@
 html, body {
-    background: linear-gradient(to bottom right, #0d2f3b, #3d5767);
+    background: linear-gradient(to bottom right, #0d2f3b, #126767);
     height: 100%;
     width: 100%;
     padding: 0;
@@ -430,7 +430,7 @@ creator - body
 .body .clothes {
     background: #292929;
     position: relative;
-    z-index: 2;
+    z-index: 50;
     border-radius: 70% 70% 0 0;
     top: -140px;
     margin: 0 auto;
@@ -441,62 +441,133 @@ creator - body
 /*******************
 creator - background
 *******************/
-.background-wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-.background {
+.bg {
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: #191919;
+    box-sizing: content-box;
+    min-width: 700px;
+}
+
+.mount {
+    z-index: 12;
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    top: -300px;
+    background: linear-gradient(to bottom, #efddc4, rgba(109, 185, 172, 0.2));
+    clip-path: polygon(0 100%, 10% 84%, 20% 72%, 30% 50%, 50% 0, 70% 50%, 100% 100%);
+}
+
+.bg .building.A {
+    height: 55px;
+    width: 300px;
+    background-color: #191919;
+    position: relative;
+    z-index: 24;
+    top: -48px;
+    left: -120px;
+    clip-path: polygon(0 100%, 30% 0%, 32% 2%, 50% 10%, 67% 50%, 70% 80%, 100% 100%);
+}
+
+.bg .building.B {
+    height: 145px;
+    width: 400px;
+    background-color: #191919;
+    position: relative;
+    z-index: 24;
+    top: -145px;
+    left: -120px;
+    clip-path: polygon(0 100%, 50% 48%, 67% 50%, 70% 42%, 80% 38%, 87% 30%,  92% 20%, 97% 70%, 100% 100%);
+}
+
+.bg .building.C {
+    height: 145px;
+    width: 200px;
+    background-color: #191919;
+    position: relative;
+    z-index: 24;
+    top: -145px;
+    left: -120px;
+    clip-path: polygon(0 100%, 50% 25%, 67% 50%, 70% 80%, 80% 85%, 95% 89%,  100% 100%);
+}
+
+.bg .building.D {
+    height: 145px;
+    width: 600px;
+    background-color: #191919;
+    position: relative;
+    z-index: 24;
+    top: -145px;
+    left: -120px;
+    clip-path: polygon(0 100%, 50% 10%, 67% 50%, 70% 80%, 80% 85%, 95% 89%,  100% 100%);
+}
+
+/*******************
+creator - stars
+*******************/
+.stars {
     width: 100%;
     height: 100%;
-    z-index: 100;
-    top: -600px;
+    position: fixed;
 }
 
-.d {
-    background: #fff;
-    display: inline-block;
-    height: 280px;
-    width: 200px;
+.stars .star {
+    height: 2px;
+    width: 2px;
     border-radius: 50%;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    background-color: #efddc4;
+    position: relative;
 }
 
-.r {
-    background: #fff;
-    display: inline-block;
-    height: 280px;
-    width: 280px;
-    border-radius: 50% 50% 0 0;
-    clip-path: polygon(40% 0, 100% 0, 100% 50%, 85% 50%, 100% 100%, 80% 100%, 60% 52%, 60% 100%, 40% 100%);
+.stars .s10 {
+    top: 40px;
+    left: 10%;
 }
-
-.e {
-    background: #fff;
-    height: 280px;
-    width: 280px;
-    clip-path: polygon(50% 0, 100% 0,
-    100% 20%, 70% 20%,
-    70% 40%, 100% 40%,
-    100% 60%, 70% 60%,
-    70% 80%, 100% 80%,
-    100% 100%, 50% 100%);
+.stars .s11 {
+    top: 140px;
+    left: 18%;
 }
-
-.a {
-    background: #fff;
-    height: 280px;
-    width: 280px;
-    clip-path: polygon(50% 0%, 80% 100%, 20% 100%);
+.stars .s12 {
+    top: 145px;
+    left: 18.5%;
+    opacity: 50%;
 }
-
-.m {
-    background: #fff;
-    height: 280px;
-    width: 280px;
-    clip-path: polygon(20% 0%, 80% 100%, 80% 0, 20% 100%);
+.stars .s13 {
+    top: 450px;
+    left: 23%;
+    opacity: 80%;
 }
-
+.stars .s14 {
+    top: 250px;
+    left: 80%;
+    opacity: 80%;
+}
+.stars .s15 {
+    top: 90px;
+    left: 78.5%;
+    opacity: 100%;
+}
+.stars .s16 {
+    top: 120px;
+    left: 75%;
+    opacity: 80%;
+}
+.stars .s17 {
+    top: 160px;
+    left: 90%;
+    opacity: 80%;
+}
+.stars .s18 {
+    top: 190px;
+    left: 72%;
+    opacity: 50%;
+}
+.stars .s19 {
+    top: 40%;
+    left: 97%;
+    opacity: 80%;
+}
 
