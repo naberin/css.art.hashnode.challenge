@@ -208,6 +208,34 @@ creator - hair
 /*}*/
 
 
+/************
+creator - ears
+*************/
+.ears.left {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 40px;
+    border-radius: 40% 0 0 80%;
+    background-color: #e0af9a;
+    top: 190px;
+    left: 160px;
+    box-shadow: inset -10px 10px 10px #f1a16f;
+    border-left: 4px solid rgba(138, 66, 21, 0.4)
+}
+
+.ears.right {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 40px;
+    border-radius: 0 80% 40% 0;
+    background-color: #e0af9a;
+    top: 190px;
+    left: 390px;
+    box-shadow: 10px 10px 30px #b06c13;
+    border-left: 4px solid rgba(138, 66, 21, 0.4)
+}
 
 /************
 creator - face
