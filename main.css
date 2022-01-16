@@ -454,7 +454,7 @@ creator - background
 .mount {
     z-index: 12;
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 300px;
     top: -300px;
     background: linear-gradient(to bottom, #efddc4, rgba(109, 185, 172, 0.2));
